@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Package for demonstrating a planned bukkit plugin DetectiveGame420."""
+__name__ = 'DetectiveGame420'
 
 __version__ = 'Pre-Alpha'
 
