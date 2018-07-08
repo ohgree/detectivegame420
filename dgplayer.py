@@ -170,7 +170,7 @@ class DGPlayer(object):
         self._score += score
         score_message = '(To {0}) {1:+}pts'.format(self._name, score)
         if msg:
-            msg = score_message + ': ' + msg
+            score_message = score_message + ': ' + msg
         print(score_message)
         
     def _setdry(self):
@@ -205,13 +205,13 @@ class DGPlayer(object):
             self._setsanitation(self._sanitation + SANITATIONDROP_SOAK)
             
         try:
-            self._soaktimer.cancel()
+            self.__soaktimer.cancel()
         except AttributeError:
             pass
         
-        self._soaktimer = DGDelayedScheduler(target=self._setdry,
+        self.__soaktimer = DGDelayedScheduler(target=self._setdry,
                                              interval=DRYING_TIME)
-        self._soaktimer.start()
+        self.__soaktimer.start()
         
     def wash(self):
         """Washes the player, adds soaked state and removes bloody state.

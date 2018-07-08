@@ -57,8 +57,8 @@ class DGDelayedScheduler(_Thread):
         super().__init__()
         if kwargs is None:
             kwargs = {}
-        if ewargs is None:
-            ekargs = {}
+        if ekwargs is None:
+            ekwargs = {}
         if endmessage is None:
             endmessage = ''
         self._target = target

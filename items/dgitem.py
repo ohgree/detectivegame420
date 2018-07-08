@@ -12,6 +12,7 @@ from detectivegame420.gamesettings import ITEMUSE_DEFAULT_SCORE
 
 
 class DGItemBase(object):
+    raise NotImplementedError('This class is not yet to be implemented')
     pass
 
 class DGItem(object):
@@ -66,7 +67,7 @@ class DGItem(object):
         return self._discription
     
     @discription.setter
-    def discription(self, discription)
+    def discription(self, discription):
         self._discription = discription
         
     @property
@@ -121,7 +122,7 @@ class DGItem(object):
         Important note: When overridden, this method must return True if the run
         was successful, otherwise return False.
         """
-        raise NotImplementedError('The method has not been overridden')
+        raise NotImplementedError('run_item() method has not been overridden')
         
         
 class InvestigationItem(DGItem):

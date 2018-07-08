@@ -14,7 +14,7 @@ from detectivegame420.professions.dgprofessionlist import *
 # Constants
 from detectivegame420.gamesettings import RANDOM_VOTE, PROFESSIONS
 
-def main():
+def _main():
     # Prompt
     for index, prof in enumerate(PROFESSIONS):
         print('{:>19}: {}'.format(prof.name, index))
@@ -66,7 +66,7 @@ def main():
             match += 1
         elif vote_result[player] is player.job:
             match += 1
-        elif isinstance(vote_result[player], DGProfessonSet):
+        elif isinstance(vote_result[player], DGProfessionSet):
             if player.job.name in [j.name for j in vote_result[player].jobs()]:
                 match += 1
     print('matches: {}'.format(match))
