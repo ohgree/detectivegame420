@@ -9,3 +9,15 @@ __all__ = ['detectivegame']
 __date__ = '25 May 2018'
 __author__ = 'Minjun Shin <ohgree@u.sogang.ac.kr>'
 __status__ = 'Prototype'
+
+from detectivegame420.detectivegame import main
+
+def test():
+    import sys
+
+    try:
+        testfile = open('./input.txt', 'r')
+        sys.stdin = testfile
+    except IOError:
+        pass
+    return main()

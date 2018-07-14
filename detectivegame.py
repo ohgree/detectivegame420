@@ -14,7 +14,7 @@ from detectivegame420.professions.dgprofessionlist import *
 # Constants
 from detectivegame420.util.gamesettings import RANDOM_VOTE, PROFESSIONS
 
-def _main():
+def main():
     # Prompt
     for index, prof in enumerate(PROFESSIONS):
         print('{:>19}: {}'.format(prof.name, index))
@@ -86,6 +86,6 @@ if __name__ == '__main__':
         sys.stdin = open(r'./input.txt', 'r')
     except IOError:
         print('input.txt not found', file=sys.stderr)
-    _ret = _main()
+    _ret = main()
     sys.stdin.close()
     
