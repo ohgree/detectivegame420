@@ -5,10 +5,10 @@
 
 __all__ = ['DGItem', 'DGFood', 'InvestigationItem']
 
-from detectivegame420.dgutil import eligible_itemuse
+from detectivegame420.util.dgutil import eligible_itemuse
 
 # Constants
-from detectivegame420.gamesettings import ITEMUSE_DEFAULT_SCORE
+from detectivegame420.util.gamesettings import ITEMUSE_DEFAULT_SCORE
 
 
 class DGItemBase(object):

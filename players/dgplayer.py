@@ -11,11 +11,11 @@ from random import randint as _randint
 from time import sleep as _sleep
 
 # Modules in current package
-from detectivegame420.dgutil import DGDelayedScheduler
+from detectivegame420.util.dgutil import DGDelayedScheduler
 from detectivegame420.professions.dgprofession import DGProfession
 
 # Constants
-from detectivegame420.gamesettings import *
+from detectivegame420.util.gamesettings import *
 
 class DGPlayer(object):
     """A class that represents a player in DetectiveGame420.

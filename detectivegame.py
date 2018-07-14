@@ -6,13 +6,13 @@
 # Python default modules
 from random import randint as _randint
 
-from detectivegame420.dgplayer import DGPlayer
-from detectivegame420.dgutil import allocate_jobs_to_players
+from detectivegame420.players.dgplayer import DGPlayer
+from detectivegame420.util.dgutil import allocate_jobs_to_players
 from detectivegame420.professions.dgprofession import DGProfessionSet
 from detectivegame420.professions.dgprofessionlist import *
 
 # Constants
-from detectivegame420.gamesettings import RANDOM_VOTE, PROFESSIONS
+from detectivegame420.util.gamesettings import RANDOM_VOTE, PROFESSIONS
 
 def _main():
     # Prompt

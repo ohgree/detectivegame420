@@ -207,8 +207,8 @@ def eligible_itemuse(player, item):
     
 # Self-test code
 def _test():
-    from detectivegame420.dgplayer import DGPlayer
-    from detectivegame420.gamesettings import PROFESSIONS
+    from detectivegame420.players.dgplayer import DGPlayer
+    from detectivegame420.util.gamesettings import PROFESSIONS
     
     player_list = [DGPlayer('Minjun Shin'), DGPlayer('Gree Oh')]
     print([p.name for p in player_list])
