@@ -22,7 +22,7 @@ class DGPlayer(object):
     
     *To be implemented: outofbreath functions
     """
-    # thought it'd be cool to have a attribute like this
+    # thought it'd be cool to have an attribute like this
     __initialized = False
     
     def __init__(self, name, job=None):
